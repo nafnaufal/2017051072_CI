@@ -1,11 +1,11 @@
-<form>
+<form action="/store" method="post">
   <div class="form-group">
     <label for="npm">NPM</label>
     <input type="text" class="form-control" id="npm" name="npm" aria-describedby="emailHelp">
   </div>
   <div class="form-group">
     <label for="nama">Nama</label>
-    <input type="text" class="form-control" name="nama" id="nama">
+    <input type="text" class="form-control" id="nama" name="nama">
   </div>
   <div class="form-group">
     <label for="alamat">Alamat</label>

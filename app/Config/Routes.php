@@ -22,8 +22,12 @@ $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->get('/', 'Home::index');
-$routes->get('/mahasiswa', 'MahasiswaController::index');
-$routes->get('/create', 'MahasiswaController::create');
+$routes->get('/mahasiswa/', 'MahasiswaController::index');
+$routes->get('/create', 'MahasiswaController::c reate');
+$routes->post('/store', 'MahasiswaController::store');
+$routes->get('/edit/(:num)', 'MahasiswaController::edit/$1');
+$routes->post('/update/(:num)', 'MahasiswaController::update/$1');
+$routes->delete('/delete/(:num)', 'MahasiswaController::delete/$1');
 $routes->get('pages', 'Pages::index');
 $routes->get('(:any)', 'Pages::view/$1');
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
